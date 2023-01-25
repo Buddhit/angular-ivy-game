@@ -2,10 +2,7 @@
   Your game component
   <div class="game-container">
     <span *ngFor="let item of randomiseData(data)">
-      <button
-        [ngStyle]="{'background-color': getColor(item)}"
-        (click)="selectButton(item)"
-      >
+      <button [ngClass]="getColor(item)" (click)="selectButton(item)">
         {{item}}
       </button>
     </span>

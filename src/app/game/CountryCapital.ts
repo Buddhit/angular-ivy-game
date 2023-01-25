@@ -50,13 +50,13 @@ export class CountryCapitalComponent {
 
   getColor(item: string): string {
     if (this.selectedFirstItem === item && !this.selectedSecondItem)
-      return '#0000ff';
+      return 'first-item-select';
     if (
       (this.selectedFirstItem === item || this.selectedSecondItem === item) &&
       this.selectedSecondItem &&
       this.selectedFirstItem
     )
-      return '#ff0000';
+      return 'wrong-selection';
 
     return '';
   }
