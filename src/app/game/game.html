@@ -1,0 +1,14 @@
+<div>
+  Your game component
+  <div class="game-container">
+    <span *ngFor="let item of randomiseData(data)">
+      <button
+        [ngStyle]="{'background-color': getColor(item)}"
+        (click)="selectButton(item)"
+      >
+        {{item}}
+      </button>
+    </span>
+    <span *ngIf="items.length === 0">Congratulations 👏 👏 👏</span>
+  </div>
+</div>
