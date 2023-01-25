@@ -318,7 +318,6 @@ export class AppComponent implements OnInit {
     "Côte d'Ivoire": 'Yamoussoukro',
     'Democratic Republic of the Congo': 'Kinshasa',
     Denmark: 'Copenhagen',
-    Djibouti: 'Djibouti',
     Dominica: 'Roseau',
     'Dominican Republic': 'Santo Domingo',
     'East Timor (Timor-Leste)': 'Dili',
@@ -343,7 +342,6 @@ export class AppComponent implements OnInit {
     Georgia: 'Tbilisi',
     Germany: 'Berlin',
     Ghana: 'Accra',
-    Gibraltar: 'Gibraltar',
     Greece: 'Athens',
     Greenland: 'Nuuk',
     Grenada: "St. George's",
@@ -383,7 +381,6 @@ export class AppComponent implements OnInit {
     Libya: 'Tripoli',
     Liechtenstein: 'Vaduz',
     Lithuania: 'Vilnius',
-    Luxembourg: 'Luxembourg',
     Macedonia: 'Skopje',
     Madagascar: 'Antananarivo',
     Malawi: 'Lilongwe',
@@ -396,7 +393,6 @@ export class AppComponent implements OnInit {
     Mauritius: 'Port Louis',
     Mexico: 'Mexico City',
     Moldova: 'Chisinau',
-    Monaco: 'Monaco',
     Mongolia: 'Ulaanbaatar',
     Montenegro: 'Podgorica',
     Montserrat: 'Plymouth',
@@ -447,14 +443,12 @@ export class AppComponent implements OnInit {
     'Saint Pierre and Miquelon': 'St. Pierre',
     'Saint Vincent and the Grenadines': 'Kingstown',
     Samoa: 'Apia',
-    'San Marino': 'San Marino',
     'Saudi Arabia': 'Riyadh',
     Scotland: 'Edinburgh',
     Senegal: 'Dakar',
     Serbia: 'Belgrade',
     Seychelles: 'Victoria',
     'Sierra Leone': 'Freetown',
-    Singapore: 'Singapore',
     'Sint Maarten': 'Philipsburg',
     Slovakia: 'Bratislava',
     Slovenia: 'Ljubljana',
@@ -507,7 +501,6 @@ export class AppComponent implements OnInit {
     Zambia: 'Lusaka',
     Zimbabwe: 'Harare',
   };
-
   ngOnInit() {
     var keys = this.shuffle(Object.keys(this.countriesData));
     keys.map((key: string) => {
