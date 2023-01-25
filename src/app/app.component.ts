@@ -510,12 +510,12 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     var keys = this.shuffle(Object.keys(this.countriesData));
-    keys.map((key) => {
+    keys.map((key: string) => {
       this.data[key] = this.countriesData[key];
     });
   }
 
-  private shuffle(array) {
+  private shuffle(array:string[]) {
     let currentIndex = array.length,
       randomIndex;
     // While there remain elements to shuffle.
